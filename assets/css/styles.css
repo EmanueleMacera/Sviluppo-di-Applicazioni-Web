@@ -1,0 +1,160 @@
+/* Reset degli stili e impostazioni di base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Colori e impostazioni globali */
+body {
+    color: #777;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.section-header {
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Pulsanti generici */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: rgb(163, 145, 84);
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #2D9CDB;
+}
+
+.btn-danger {
+    background-color: #EB5757;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+/* Intestazioni e titoli */
+.shop-item-title,
+.cart-header,
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+/* Lista degli articoli */
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.shop-item {
+    width: 45%;
+    margin: 15px 0;
+    background-color: #343a40;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.shop-item-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.shop-item-details {
+    padding: 15px;
+}
+
+.shop-item-price {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+/* Carrello */
+.cart-row {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(234, 183, 9);
+    padding: 10px 0;
+}
+
+.cart-column {
+    width: 45%;
+    padding: 10px;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cart-item-title {
+    color: #fff;
+    margin-left: 10px;
+    font-size: 1.2em;
+}
+
+.cart-price,
+.cart-quantity {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid rgb(234, 183, 9);
+    background-color: #eee;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 15px;
+}
+
+.cart-total {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.cart-total-price {
+    color: rgb(234, 183, 9);
+    font-size: 1.2em;
+}
+
+/* Pulsante di acquisto */
+.btn-purchase {
+    display: block;
+    margin: 40px auto;
+    font-size: 1.5em;
+}
